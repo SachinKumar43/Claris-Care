@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health packages</title>
+    <!-- CSS only -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
+    <script src="https://kit.fontawesome.com/33e495fb35.js" crossorigin="anonymous"></script>
+    <link rel = 'stylesheet' href = 'style.css'>
+</head>
+<body>
+     <!--Header Section Start-->
+     <header>
+
+        <p class="bar"><marquee scrollamount="12"  direction="right">Helpline Number: +91-11-23978046 &emsp; &emsp; &emsp; Toll Free Number: 1075 </marquee></p><hr>
+    
+        <div class="container">
+            
+            <a href="../home/HOMEfinal.html" class="logo"><span>C</span>laris<span>C</span>are<span>.</span></a>
+    
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar" class="fas fa-bars"></label>
+            <nav class="nav">
+                <ul>
+                    <li class="navli"><a href="../home/HOMEfinal.html">Home</a></li>
+                        
+                        <li class="navli"><a href="../covid-19/covid.html">Covid-19</a></li>
+                        <li class="navli"><a href="../career/career.html">Careers</a></li>
+                        <li class="navli" ><a href="../specialist/Patient/Specialists.html">Specialists</a></li>
+                        <li class="navli"><a href="../appointment/app.html">Appointment</a></li>
+                        <li class="navli"><a href="../blog/blog.html">Blogs</a></li>
+                        <li class="navli"><a style="font-weight: bolder;" href="#">Health Packages</a></li>
+                        <li class="navli"><a href="../news/news.html">News</a></li>
+                        <li class="navli"><a href="../Patient/our-Patients.html">Our Patients</a></li>
+                        
+                    
+                </ul>
+            </nav>
+    
+        </div> 
+        
+        </header>
+        <!--Header Section Ends-->
+      
+      <div class = 'sj1'>
+          <div class = 'row'>
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 35rem;">
+                    <img src="img/1/female-checkup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h2 class="card-title">Senior Citizen Female Care Package</h2>
+                      <h2 class="card-text">₹100</h2>
+                      <a class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 35rem;">
+                    <img src="img/2/senior-citizen-male.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h2 class="card-title">Senior Citizen male Care Package</h2>
+                      <h4 class="card-text">₹80</h4>
+                      <a  class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 30rem;">
+                    <img src="img/3/Arthritis.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h2 class="card-title">Arthritis Tests</h2>
+                      <h4 class="card-text">₹50</h4>
+                      <a class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+            
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 35rem;">
+                    <img src="img/4/Hypothyroidism-Panel-e1613045325845.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h2 class="card-title">Thyroid Test</h2>
+                      <h4 class="card-text">₹100</h4>
+                      <a class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 35rem;">
+                    <img src="img/5/Jaundice-Panel-e1613045414614.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h2 class="card-title">Jaundice Test</h2>
+                      <h4 class="card-text">₹30</h4>
+                      <a class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 30rem;">
+                    <img src="img/6/cardiac-tests-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h2 class="card-title">Obesity Test</h2>
+                      <h4 class="card-text">₹100</h4>
+                      <a class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+      <div class="uk-overflow-auto container" style = 'width: 100%'>
+        <table class="uk-table uk-table-hover uk-table-middle uk-table-divider">
+            <thead>
+                <tr>
+                    <th class="uk-table-shrink"></th>
+                    <th class="uk-table-small sty"><h3>ITEM</h3></th>
+                    <th class="uk-table-small"></th>
+                    <th class="uk-width-small sty"><h3>PRICE</h3></th>
+                    <th class="uk-table-shrink uk-text-small sty"><h3>QUANTITY</h3></th>
+                    <th class="uk-table-shrink uk-text-small sty"><h3>TOTAL</h3></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="uk-table-link">
+                        <h3 class = "item-name"></h3>
+                    </td>
+                    <td class="uk-text-truncate item-price"><h3></h3></td>
+                    <td></td>
+                    <td class="uk-text-truncate total-price"><h3></h3></td>
+                    <td></td>
+                </tr>
+          
+
+            </tbody>
+            <tr>
+              <td><input class="uk-checkbox" type="checkbox"></td>
+              <td><img class="uk-preserve-width uk-border-circle"  width="40" alt=""></td>
+              <td class="uk-table-link">
+                  <h3 class = "item-name"><strong>Grand-Total</strong></h3>
+              </td>
+              <td class="uk-text-truncate"><h3></h3></td>
+              <td class="uk-text-truncate"><h3></h3></td>
+              <td class="uk-text-truncate grand-total"><h3><strong>₹0</strong></h3></td>
+              <td><a href="pay.html"><button id="pn">PAY NOW!!</button></a></td>
+          </tr>
+        </table>
+    </div>
+
+      <script src = 'script.js'></script>
+</body>
+</html>

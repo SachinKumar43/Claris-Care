@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    
+    <!--Header Section Start-->
+    <header>
+
+    <div class="container">
+        
+        <a href="../../home/HOMEfinal.html" class="logo"><span>C</span>laris<span>C</span>are<span>.</span></a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fas fa-bars"></label>
+        <nav class="nav">
+            <ul>
+              <li class="navli"><a href="#medicineslink">Order Medicines</a></li>
+              <li class="navli"><a href="#healthp">Healthcare Products</a></li>
+              <li class="navli"><a href="#lab">Lab Tests</a></li>
+              <li class="navli"><a href="#offer">Offers</a></li>
+              <li class="navli"><a style="cursor: pointer;" id="cart-icon"><i class="bx bx-shopping-bag" ></i> Cart</a></li>
+            </ul>
+        </nav>
+
+        <div class="cart">
+
+            <h2 class="cart-title">Your Cart</h2>
+        
+            <div class="cart-content">
+
+
+            </div>
+
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">₹ 0</div>
+            </div>
+            
+            <div class="submit"><button type="button" class="btn-buy"><a href="../../payment gateway/creditcard.html" style="color: white;"> Buy Now</a></button></div>
+        
+
+            <i class="bx bx-x" id="close-cart"></i>
+
+        </div>
+
+    </div> 
+    
+    </header>
+    <!--Header Section Ends-->
+
+
+    <!--SLIDESHOW STARTS-->
+
+    <div class="slider">
+        
+        <div class="myslide fade">
+        <img src="https://cms-contents.pharmeasy.in/banner/ff62f53c2ba-GRAND25DWEB.jpg?dim=1440x0&dpr=1&q=100" style="width: 100%; ">
+        </div>
+        
+        <div class="myslide fade">
+        <img src="https://cms-contents.pharmeasy.in/banner/dc96747a149-dwb_covid_a.jpg?dim=1440x0&dpr=1&q=100" style="width: 100%;">
+        </div>
+        
+        <div class="myslide fade">
+        <img src="https://cms-contents.pharmeasy.in/banner/513bf041143-Dweb_covid_1.jpg?dim=1440x0&dpr=1&q=100" style="width: 100%;">
+        </div>
+        
+        
+        <!-- onclick js starts -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        <div class="dotsbox" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <!-- onclick js ends -->
+
+
+    </div>
+      
+    <!--SLIDESHOW ENDS-->
+
+
+    <!--Services Starts-->
+
+    <section class="services">
+
+        
+        <div class="row">
+            <div class="container col-12 col-s-12">
+                
+                <div class="box ">
+                    <span class="t">FLAT 20% OFF</span><br>
+                    <img src="medicines.png" height="200px" width="200px" alt="">
+                    <button style="background-color: #3bb896;" class="button"><a href="#medicineslink" style=" color: whitesmoke;">Order Now</a></button>
+                </div>
+
+                <div class="box second">
+                    <span class="t">Upto 60% OFF</span><br>
+                    <img src="hp.png" height="200px" width="200px" alt="">
+                    <button style="background-color: #fc8019;" class="button"><a href="#healthp" style=" color: whitesmoke;">Order Now</a></button>
+                </div>
+
+                <div class="box third" >
+                    <span class="t">Upto 70% OFF</span><br>
+                    <img src="lt.png" height="200px" width="200px" alt="">
+                    <button style="background-color: #00b9e1;" class="button"><a href="#lab" style="color: whitesmoke;">Book Now</a></button>
+                </div>
+
+            </div>
+        </div>
+
+        
+
+    </section>
+    
+
+    <!--Services Ends-->
+
+    <!--PLUS SECTION STARTS-->
+    <div class="bplus">
+    <div data-aos="fade-right" data-aos-duration="3500" class="plus  col-s-12">
+
+        <h1>ClarisCare <span><sup><sup>+Plus</span></h1>
+
+        <p>Save flat 5% extra on medicines & enjoy FREE delivery with PLUS membership</p>
+
+        <img src="https://assets.pharmeasy.in/web-assets/dist/b20b0932.png" alt="">
+
+    </div>
+    </div>
+
+    <!--PLUS SECTION ENDS-->
+
+
+    <!--Order Medicines-->
+
+    <section  class="shop-container">
+        
+        <h1  class="section-title">Order Medicines</h1>
+        
+        <div data-aos="flip-left" data-aos-duration="3500" id="medicineslink" class="shop-content">
+    
+            <!-- Box-1 -->
+            <div  class="product-box">
+                <img class="product-img" src="https://www.netmeds.com/images/product-v1/600x600/410079/fepanil_500mg_tablet_15_s_0.jpg" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Fepanil 500mg Tablet 15'S</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 74.04</span>
+                <i style=" font-size: 1.5rem;" class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            
+
+            <!-- Box-2 -->
+            <div class="product-box">
+                <img class="product-img" src="https://www.netmeds.com/images/product-v1/600x600/412276/eternex_m_500mg_tablet_10_s_0.jpg" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Eternex 500mg Tablet 10'S</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 129.04</span>
+                <i style=" font-size: 1.5rem;" class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-3 -->
+            <div class="product-box">
+                <img class="product-img" src="https://www.netmeds.com/images/product-v1/600x600/905234/abvida_50mg_tablet_15s_0_0.jpg" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Abvida 50mg Tablet 15'S</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 131.98</span>
+                <i style=" font-size: 1.5rem;" class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-4 -->
+            <div class="product-box">
+                <img class="product-img" src="https://www.tabletshablet.com/wp-content/uploads/2021/06/Dapavel-10-Tablet-10S-1.jpg" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Dapavel 10 Tablet 10'S</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 104.00</span>
+                <i style=" font-size: 1.5rem;" class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-5 -->
+            <div class="product-box">
+                <img class="product-img" src="https://www.netmeds.com/images/product-v1/600x600/895520/fixobetes_tablet_30s_0_0.jpg" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Fixobetes Tablet 30'S</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 100.80</span>
+                <i style=" font-size: 1.5rem;" class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-6 -->
+            <div class="product-box">
+                <img class="product-img" src="https://www.netmeds.com/images/product-v1/600x600/884729/fiasp_100iu_injection_10ml_0_0.jpg" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">FIASP 1IU Injection 10ml</span><br><br><br>
+                <span style="font-weight: 550; font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 1470.00</span>
+                <i style=" font-size: 1.5rem;" class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-7 -->
+            <div class="product-box">
+                <img class="product-img" src="https://www.netmeds.com/images/product-v1/600x600/801734/formin_pg_1mg_tablet_15_s_0.jpg" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">FORMIN PG Tablet 15'S</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 124.00</span>
+                <i style=" font-size: 1.5rem;" class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-8 -->
+            <div class="product-box">
+                <img class="product-img" src="https://www.netmeds.com/images/product-v1/600x600/32296/forxiga_10mg_tablet_14s_0_0.jpg" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Forxiga 10mg Tablet 14'S</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 336.00</span>
+                <i style=" font-size: 1.5rem;" class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-9 -->
+            <div class="product-box">
+                <img class="product-img" src="https://www.netmeds.com/images/product-v1/600x600/950881/flozimax_10_tablet_15s_0_0.jpg" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Flozimax 10 Tablet 15'S</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 156.98</span>
+                <i style=" font-size: 1.5rem;" class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-10 -->
+            <div class="product-box">
+                <img class="product-img" src="https://www.netmeds.com/images/product-v1/600x600/818076/glimiprime_1mg_tablet_10_s_0.jpg" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Glimiprime Tablet 10'S</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 30.33</span>
+                <i style=" font-size: 1.5rem;" class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-11 -->
+            <div class="product-box">
+                <img class="product-img" src="https://www.netmeds.com/images/product-v1/600x600/407880/glimisave_1mg_tablet_15_s_0.jpg" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Glimisave 1mg Tablet 15'S</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 48.32</span>
+                <i style=" font-size: 1.5rem;" class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-12 -->
+            <div class="product-box">
+                <img class="product-img" src="https://www.netmeds.com/images/product-v1/600x600/332498/azulix_mf_3mg_tablet_10_s_0.jpg" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Azulix MF 3mg Tablet 10'S</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 68.40</span>
+                <i style=" font-size: 1.5rem;" class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+
+        </div>
+
+        
+    </section>
+    <!--Order Medicines-->
+
+
+    <!--Safety Starts-->
+
+    <h1 class="safehead" >Five step assured safety</h1>
+
+    <div  style="margin-top: 7%;" class="safety marquee">
+        <div><img height="100%" width="100%" src="https://assets.pharmeasy.in/web-assets/dist/0ad2d80a.png"  alt=""></div>
+        <div><img width="100%" height="100%" src="https://assets.pharmeasy.in/web-assets/dist/6e630ccf.png" alt=""></div>
+        <div><img src="https://assets.pharmeasy.in/web-assets/dist/c9bd8df2.png" width="100%" height="100%" alt=""></div>
+        <div><img width="100%" height="100%" src="https://assets.pharmeasy.in/web-assets/dist/748e0da8.png" alt=""></div>
+        <div><img width="100%" height="100%" src="https://assets.pharmeasy.in/web-assets/dist/aada0d0d.png" alt=""></div>
+        <div><img width="100%" height="100%" src="https://assets.pharmeasy.in/web-assets/dist/091811c4.png" alt=""></div>
+    </div>
+
+    <!--Safety Ends-->
+
+
+
+    <!--HealthCare Products Starts-->
+
+    
+    <section class="shop-container">
+        
+        <h1 class="section-title">Health Products</h1>
+        
+        <div data-aos="flip-right" data-aos-duration="3500" id="healthp" class="shop-content">
+    
+            <!-- Box-1 -->
+            <div class="product-box">
+                <img class="product-img" src="https://cdn01.pharmeasy.in/dam/products_otc/I05582/dr-morepen-gluco-one-bg-03-glucometer-test-strips-box-of-50-1-1641398939.jpg?dim=200x0&dpr=1.5&q=100" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Dr Morepen Gluco Strips</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹517.89</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            
+
+            <!-- Box-2 -->
+            <div class="product-box">
+                <img class="product-img" src="https://cdn01.pharmeasy.in/dam/products_otc/253460/accu-chek-active-glucometer-test-strips-box-of-100-1-1641399117.jpg?dim=200x0&dpr=1.5&q=100" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">AccuCheck Strips Box</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹1569.75</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-3 -->
+            <div class="product-box">
+                <img class="product-img" src="https://cdn01.pharmeasy.in/dam/products_otc/Y79335/omron-hem-7124-bp-monitor-2-1641788328.jpg?dim=200x0&dpr=1.5&q=100" height="70%" width="70%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Omron Bp Monitor</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 2300.00</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-4 -->
+            <div class="product-box">
+                <img class="product-img" src="https://cdn01.pharmeasy.in/dam/products_otc/131679/one-touch-select-glucometer-test-strips-bottle-of-50-1-1641398674.jpg?dim=200x0&dpr=1.5&q=100" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">One Touch Strips</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 1041.95</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-5 -->
+            <div class="product-box">
+                <img class="product-img" src="https://cdn01.pharmeasy.in/dam/products_otc/Z70690/covifind-covid-19-rapid-antigen-self-test-by-meril-easy-self-test-ai-powered-result-in-15-min-2-1641793544.jpg?dim=200x0&dpr=1.5&q=100" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Covifind Covid-19 Self Test</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 225.00</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-6 -->
+            <div class="product-box">
+                <img class="product-img" src="https://cdn01.pharmeasy.in/dam/products_otc/000660/accu-chek-active-glucometer-kit-with-free-10-strips-2-1641399106.jpg?dim=200x0&dpr=1.5&q=100" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Accu-Chek Glucometer Kit</span><br><br><br>
+                <span style="font-weight: 550; font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 1470.12</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-7 -->
+            <div class="product-box">
+                <img class="product-img" src="https://cdn01.pharmeasy.in/dam/products_otc/L80156/coronation-digital-thermometer-classic-plus-2-1641792710.jpg?dim=200x0&dpr=1.5&q=100" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Digital Thermometer</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 279.30</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-8 -->
+            <div class="product-box">
+                <img class="product-img" src="https://cdn01.pharmeasy.in/dam/products_otc/Y53636/liveasy-essentials-pill-box-2-1641789857.jpg?dim=200x0&dpr=1.5&q=100" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Essentials Pill Box</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 359.10</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-9 -->
+            <div class="product-box">
+                <img class="product-img" src="https://cdn01.pharmeasy.in/dam/products_otc/O80282/panbio-covid-antigen-self-test-1-test-kits-icmr-approved-test-results-in-15-mins-2-1641793620.jpg?dim=200x0&dpr=1.5&q=100" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Covid Antigen Self Test</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 260.00</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-10 -->
+            <div class="product-box">
+                <img class="product-img" src="https://cdn01.pharmeasy.in/dam/products_otc/N52070/accu-chek-instant-s-glucometer-with-10-strips-with-free-30gm-pack-of-colgate-diabetics-toothpaste-2-1641793767.jpg?dim=200x0&dpr=1.5&q=100" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Accu-Chek Instant S Kit</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 901.18</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-11 -->
+            <div class="product-box">
+                <img class="product-img" src="https://cdn01.pharmeasy.in/dam/products_otc/H65967/dr-trust-smart-talking-bp-monitor-1-1641788673.jpg?dim=200x0&dpr=1.5&q=100" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Talking Bp Monitor</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 2200.00</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-12 -->
+            <div class="product-box">
+                <img class="product-img" src="https://cdn01.pharmeasy.in/dam/products_otc/Q67374/go-life-finger-pulse-oximeter-1s-2-1641925600.jpg?dim=200x0&dpr=1.5&q=100" height="70%" width="80%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Finger Pulse Oximeter</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 1499.50</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+
+        </div>
+
+        
+    </section>
+
+    <!--HealthCare Products Ends-->
+
+    <!--Lab-->
+    <div class="bplus">
+        <div data-aos="fade-up-right" data-aos-duration="3500" style="background-size: cover; background-image: url(https://cdn01.pharmeasy.in/dam/banner/banner/c5ae1494075-DesktopTrust.png?dim=1024x100&dpr=1.5&q=100);" class="plus  col-s-12">
+    
+            
+        </div>
+        </div>
+    <!--Lab-->
+
+    <!--Lab Tests Starts-->
+
+    
+    <section class="shop-container">
+        
+        <h1 class="section-title">Popular Lab Tests</h1>
+        
+        <div data-aos="flip-right" data-aos-duration="3500" id="lab" class="shop-content">
+    
+            <!-- Box-1 -->
+            <div class="product-box">
+                <img class="product-img" src="https://assets.pharmeasy.in/web-assets/dist/909edb3f.svg" height="70%" width="100%" alt=""><br><br>
+                <span style="font-weight: 900;" class="product-title">Thyroid Profile-Total</span><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹350.00</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            
+
+            <!-- Box-2 -->
+            <div class="product-box">
+                <img class="product-img" src="https://assets.pharmeasy.in/web-assets/dist/909edb3f.svg" height="70%" width="100%" alt=""><br><br>
+                <span style="font-weight: 900;" class="product-title">Complete Blood Count</span><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹375.00</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-3 -->
+            <div class="product-box">
+                <img class="product-img" src="https://assets.pharmeasy.in/web-assets/dist/909edb3f.svg" height="70%" width="70%" alt=""><br><br>
+                <span style="font-weight: 900;" class="product-title">HbA1c Test</span><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 265.00</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-4 -->
+            <div class="product-box">
+                <img class="product-img" src="https://assets.pharmeasy.in/web-assets/dist/909edb3f.svg" height="70%" width="100%" alt=""><br><br>
+                <span style="font-weight: 900;" class="product-title">C-Reactive Protein</span><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 450.00</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-5 -->
+            <div class="product-box">
+                <img class="product-img" src="https://assets.pharmeasy.in/web-assets/dist/909edb3f.svg" height="70%" width="100%" alt=""><br><br>
+                <span style="font-weight: 900;" class="product-title">Erythrocyte</span><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 225.00</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-6 -->
+            <div class="product-box">
+                <img class="product-img" src="https://assets.pharmeasy.in/web-assets/dist/909edb3f.svg" height="70%" width="100%" alt=""><br><br>
+                <span style="font-weight: 900;" class="product-title">Calcium (Ca)</span><br><br>
+                <span style="font-weight: 550; font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 275.00</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-7 -->
+            <div class="product-box">
+                <img class="product-img" src="https://assets.pharmeasy.in/web-assets/dist/909edb3f.svg" height="70%" width="100%" alt=""><br><br>
+                <span style="font-weight: 900;" class="product-title">Creatinine</span><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 350.00</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-7 -->
+            <div class="product-box">
+                <img class="product-img" src="https://assets.pharmeasy.in/web-assets/dist/909edb3f.svg" height="70%" width="100%" alt=""><br><br>
+                <span style="font-weight: 900;" class="product-title">Potassium (K+)</span><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 215.00</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            
+        </div>
+
+        
+    </section>
+
+    <!--HealthCare Products Ends-->
+
+
+    <!--Offers Starts-->
+
+    <h1 id="offer" class="offerhead">Offers Just For You</h1>
+
+    <div  style="margin-top: 7%;" class="offers marquee">
+        <div>
+            <img  src="https://cms-contents.pharmeasy.in/offer/737ab45a1b1-Everyuth_Logo.jpg?dim=60x0&dpr=1.5&q=100"  alt="">
+            <p>Extra 10% off on Everyuth Code: EYUTH10</p>
+        </div>
+        <div>
+            <img  src="https://cms-contents.pharmeasy.in/offer/4ea857a29d8-Sebamed_logo_1_1.jpg?dim=60x0&dpr=1.5&q=100"  alt="">
+            <p>Extra 8% off on Sebamed Code: SEBAMEDSALE</p>
+        </div>
+        <div>
+            <img  src="https://cms-contents.pharmeasy.in/offer/65f9859b600-Zandu_New_Logo.jpg?dim=60x0&dpr=1.5&q=100"  alt="">
+            <p>Extra 15% off on Zandu Code: ZANDU15</p>
+        </div>
+
+        <div>
+            <img  src="https://cms-contents.pharmeasy.in/offer/a93ac09b3be-1.jpg?dim=60x0&dpr=1.5&q=100"  alt="">
+            <p>Get Flat Rs.400 Cashback On Tablets Code: UCNEW25</p>
+        </div>
+        <div>
+            <img  src="https://cms-contents.pharmeasy.in/offer/79c9e323814-AMAZON.jpg?dim=60x0&dpr=1.5&q=100"  alt="">
+            <p>Get up to Rs.500 Cashback via Amazon Pay Code: AMAZ67</p>
+        </div>
+        <div>
+            <img  src="https://cms-contents.pharmeasy.in/offer/9d8814b815b-Kapiva.jpg?dim=60x0&dpr=1.5&q=100"  alt="">
+            <p>Extra 10% off on Kapiva Code: KP110</p>
+        </div>
+        
+        
+    </div>
+
+
+    <!--Offers Ends-->
+
+
+
+    <!--Deals Starts-->
+
+    <section style="background-color: rgb(247,107,109, 0.2);" class="shop-container">
+        
+        <div class="in">
+        <h1 style="color: var(--black);" class="section-title "><img src="https://assets.pharmeasy.in/web-assets/dist/cc9b301d.svg" alt="">&emsp; Deals of the Day&emsp;|&emsp;  </h1>
+
+        
+            <div   class="countdown" id="countdown">
+                <!-- <div class="time">
+                    <h2 id="days"></h2>
+                    <small>Days</small> -->
+                </div>
+                <div class="time">
+                    <h2 id="hours"></h2>
+                    <small>Hours</small>
+                </div>
+                <div class="time">
+                    <h2 id="minutes"></h2>
+                    <small>Minutes</small>
+                </div>
+                <div class="time">
+                    <h2 id="seconds"></h2>
+                    <small>Seconds</small>
+                </div>
+                <div class="time">
+                    <h2 id="seconds">&ensp;left</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="shop-content">
+            
+            
+            <!-- Box-9 -->
+            <div class="product-box">
+                <img class="product-img" src="https://cdn01.pharmeasy.in/dam/products_otc/O80282/panbio-covid-antigen-self-test-1-test-kits-icmr-approved-test-results-in-15-mins-2-1641793620.jpg?dim=200x0&dpr=1.5&q=100" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Covid Antigen Self Test</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 260.00</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-10 -->
+            <div class="product-box">
+                <img class="product-img" src="https://cdn01.pharmeasy.in/dam/products_otc/N52070/accu-chek-instant-s-glucometer-with-10-strips-with-free-30gm-pack-of-colgate-diabetics-toothpaste-2-1641793767.jpg?dim=200x0&dpr=1.5&q=100" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Accu-Chek Instant S Kit</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 901.18</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-11 -->
+            <div class="product-box">
+                <img class="product-img" src="https://cdn01.pharmeasy.in/dam/products_otc/H65967/dr-trust-smart-talking-bp-monitor-1-1641788673.jpg?dim=200x0&dpr=1.5&q=100" height="70%" width="100%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Talking Bp Monitor</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 2200.00</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            <!-- Box-12 -->
+            <div class="product-box">
+                <img class="product-img" src="https://cdn01.pharmeasy.in/dam/products_otc/Q67374/go-life-finger-pulse-oximeter-1s-2-1641925600.jpg?dim=200x0&dpr=1.5&q=100" height="70%" width="80%" alt=""><br>
+                <span style="font-weight: 900;" class="product-title">Finger Pulse Oximeter</span><br><br><br>
+                <span style="font-weight: 550; color: gray; font-size: 1.5rem;" class="price">₹ 1499.50</span>
+                <i style=" font-size: 1.5rem; " class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+            
+            
+        </div>
+
+        
+    </section>
+
+
+    <!--Deals Ends-->
+
+
+    <!--Services Starts-->
+
+    <section class="end">
+
+        
+        <div class="row">
+            <div class="container col-12 col-s-12">
+                
+                <div class="box ">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/4d2f7c48.svg" height="200px" width="200px" alt="">
+                    <h1>25 Million</h1>
+                    <h2>Registered Users As of Aug 2021</h2>
+                </div>
+
+                <div class="box ">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/92c372bb.svg" height="200px" width="200px" alt="">
+                    <h1>8.8 Million</h1>
+                    <h2>ClarisCare Orders as of FY21</h2>
+                </div>
+
+                <div class="box ">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/773ae9c5.svg" height="200px" width="200px" alt="">
+                    <h1>50K+</h1>
+                    <h2>SKU's sold in Q1FY22</h2>
+                </div>
+
+                
+            </div>
+        </div>
+
+        
+
+    </section>
+    <div>.</div>
+    <!--Footer Section Starts-->
+
+    <footer>
+        
+        <div class="footer-down">
+
+            <a style="color: whitesmoke;" href="#"><h3><span>C</span>laris<span>C</span>are</h3></a>
+
+            <ul class="socials">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">G+</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+
+            <p>copyright &copy;2022 ClarisCare. designed by <span>The Binary Beasts</span></p>
+        </div>
+
+    </footer>
+
+  <!--Footer Section Ends-->    
+
+
+    <script src="home.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 250
+        });
+    </script>
+
+</body>
+</html>

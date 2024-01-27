@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+        }
+        ul{
+            text-align: left;
+        }
+        #head li{
+            list-style: circle;
+        }
+        #head1::before{
+            list-style: circle;
+        }
+        #replace_.active{
+            list-style-type: disc;
+        }
+        #insert_.active{
+            list-style-type: disc;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            
+            <li id="replace_">
+                <dl>
+               
+                    <dt id="head1"></dt>
+                    <dd id="head_1">A. i am an engineering student</dd>
+                </dl>
+            </li>
+            <li id="insert_"><dl>
+                <dt id="head2"></dt>
+                <dd>K. This is Web Technology</dd>
+                </dl>
+            </li>
+            <li><dl>
+                <dd>
+                6. I got 10 cgpa
+                </dd>
+                </dl>
+            </li>
+        </ul>
+        <button id="replace">Replace</button> <button id="append">Append</button> <button id="insert">Insert before</button> <button id="remove">Remove</button>
+    </div>
+
+    <script>
+
+let replace=document.querySelector("#replace");
+let append=document.querySelector("#append");
+let insert=document.querySelector("#insert");
+let remove=document.querySelector("#remove");
+
+replace.onclick=()=>{
+    document.getElementById("head_1").innerHTML="i am a BE student";
+}
+
+
+append.onclick=()=>{
+    document.getElementById("head1").innerHTML="Advance Web Technolody";
+    document.getElementById("replace_").classList.add("active")
+}
+
+
+insert.onclick=()=>{
+    document.getElementById("head2").innerHTML="Discrete Structures";
+    document.getElementById("insert_").classList.add("active")
+}
+
+
+remove.onclick=()=>{
+    document.getElementById("head2").innerHTML="";
+    document.getElementById("insert_").classList.remove("active")
+}
+
+    </script>
+
+</body>
+</html>

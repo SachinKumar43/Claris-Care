@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="homefavinew.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="HOMEfinal1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+    
+        .dark-mode11  {
+      background-color: var(--black) !important;
+      color: white !important;
+      
+    
+    }
+    </style>
+    
+    <script>
+        function myFunction() {
+           var element = document.body  ;
+           
+           element.classList.toggle("dark-mode11");
+           
+          
+        }
+        </script>
+
+</head>
+<body>
+    <div class="bar"><marquee behavior="" scrollamount="12" direction="right"> &nbsp; &nbsp; &ensp; &ensp; &ensp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Helpline Number: +91-11-23978046 &nbsp; &nbsp; &nbsp; Toll Free Number: 1075</marquee></div><br>
+<!-- navbar -->
+
+<!--Header Section Start-->
+<header>
+
+    <p class="bar"><marquee scrollamount="12"  direction="right">Helpline Number: +91-11-23978046 &emsp; &emsp; &emsp; Toll Free Number: 1075 </marquee></p><hr>
+
+    <div class="container">
+        
+        <a href="#" class="logo"><span>C</span>laris<span>C</span>are<span>.</span></a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fas fa-bars"></label>
+        <nav class="nav">
+            <ul>
+                <li class="navli"><a href="#"  id="headingcareer">Home</a></li>
+                <li class="navli"><a href="#covid" >Covid-19</a></li>
+                <li class="navli"><a href="#career">Careers</a></li>
+                <li class="navli"><a href="#specialist">Specialists</a></li>
+                <li class="navli"><a href="#appointment">Appointment</a></li>
+                <li class="navli"><a href="#blog">Blogs</a></li>
+                <li class="navli"><a href="#health">Health Packages</a></li>
+                <li class="navli"><a href="#news">News</a></li>
+                <li class="navli"><a href="#patient">Our Patients</a></li>
+                <li class="navli"><div class="checkbox">
+                    <div class="inner">
+                        <div class="toggle" onclick="myFunction()">
+                
+                        </div>
+                    </div>
+                </div>
+                </li>
+                
+                
+                
+
+                
+            </ul>
+        </nav>
+
+    </div> 
+    
+    </header>
+    <!--Header Section Ends-->
+
+
+<!-- service logo part -->
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn"><div><img src="./../servicelogo3.png" alt="" width="10px" style="border-radius: 50%;"></div></button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content  animate__animated animate__fadeInLeft">
+    <span class="close"></span>
+    <a href="../Pharmacy/Home/home.html" style="color: black;">PHARMACY</a>
+    <a href="../meditation Page/MEDITATION.html" style="color: black;">MEDITATION</a>
+    <a href="../bmi calculator/bm.html" style="color: black;">BMI CALCULATOR</a>
+    
+  </div>
+
+</div>
+
+<button id="myBtn1"><div><a href="#"><img src="./../backtotoplogo.png" alt="" width="10px" style="border-radius: 50%;"></a></div></button>  <!--back to top btn-->
+
+<!-- service logo part  ENDS--> 
+
+
+<script>
+    var modal = document.getElementById("myModal");
+    
+    var btn = document.getElementById("myBtn");
+    
+    var span = document.getElementsByClassName("close")[0];
+    
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+
+
+
+
+
+    <!--Start Section starts-->
+
+    <div class="start">
+
+        <div class="content col-6">
+            <br><br><br>
+            <h2>Your Most Trusted health partner</h2>
+            <h3>the best match services for you</h3>
+
+            
+        </div>
+
+        
+    </div>
+
+    <!--Start Section ends-->
+
+    <!--COVID SECTION STARTS-->
+
+    <div class="container-s2 col-12 col-s-12" id="covid">
+
+        <h1>prevention from corona virus</h1>
+
+        <h2>stay home, stay safe</h2>
+
+        <a href="../covid-19/covid.html"><h3>how to prevent</h3></a>
+
+    </div>
+
+    <!--COVID SECTION ENDS-->
+
+    <!-- CAREER DIV STARTS -->
+    <div class="footer col-12 col-s-12" id="career">
+        <div class="blogdiv">
+            <div class="white-boundaryblog">
+                <div class="box2">
+                    <br><br>
+                    <div class="blog-item blog-item-1">CAREER</div>
+                    <br><br>
+                    <div class="blog-item blog-item-2">One of the deep secrets of life is that all that is really worth doing is what we do for others. -Lewis Carol</div>
+                    <br><br> 
+                    <div class="blog-item blog-item-3">Apply for jobs here at Claris Care</div>
+                    <br><br>
+                    <div class="blog-item blog-item-4"><button class="button"><a href="../career/career.html"  style="color: whitesmoke;">VISIT NOW !</a> </button></div>
+                    <img src="careerbackLOWRES.jpeg" alt="" id="img1">
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- CAREER DIV ENDS -->
+
+    <!--SPECIALISTS SECTION STARTS-->
+
+    <div class="container-s4 col-12 col-s-12" id="specialist">
+
+        <h1>Team and Specialists</h1>
+
+        <p>Only cardiac hospital in India to have a dedicated Paediatric <br> Department with a specialized, highly trained multi-disciplinary <br> team of Paediatric Cardiologists, Paediatric Surgeons, <br>Anaesthesiologists and Paediatric Intensivists.</p>
+        
+        <a href="../specialist/Patient/Specialists.html" style="color: whitesmoke;"><h2>More Details -></h2></a>
+
+    </div>
+
+    <!--SPECIALISTS SECTION ENDS-->
+
+    <!--APPOINTMENT DIV STARTS-->
+
+    <div class="container-s col-12 col-s-12" id="appointment">
+
+        <h1>Providing cutting-edge Healthcare <br><br> For Your near Ones !</h1>
+
+        <p>Book an appointment with our best doctors who are <br><br> the perfect match for your family’s medical needs.</p>
+
+        <a href="../appointment/app.html"><h2>Make Appointment -></h2></a>
+
+    </div>
+
+    <!--APPOINTMENT DIV ENDS-->
+
+    <!-- BLOG DIV STARTS -->
+    <div class="footer col-12 col-s-12" id="blog">
+        <div class="blogdiv">
+            <div class="white-boundaryblog">
+                <div class="box2">
+                    <br><br><br><br>
+                    <div class="blog-item blog-item-1">BLOG</div>
+                    <br><br>
+                    <div class="blog-item blog-item-2">Knowledge is the KEY to Wellness</div>
+                    <br><br> 
+                    <div class="blog-item blog-item-3">To get frequent updates and general health related articles, visit our Blog Page</div>
+                    <br><br>
+                    <div class="blog-item blog-item-4"><button class="button"><a href="../blog/blog.html" style="color: whitesmoke;"> VISIT NOW !</a></button></div>
+                    <img src="docwallLOWRES.jpeg" alt="" id="img1">
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- BLOG DIV ENDS -->
+
+
+    <!-- HEALTH DIV STARTS -->
+    <div class="footer col-12 col-s-12" id="health">
+        <div class="blogdiv">
+            <div class="white-boundaryblog">
+                <div class="box2">
+                    <div class="blog-item blog-item-1s">HEALTH PACKAGES</div>
+                    <div class="blog-item blog-item-2s">All your protection under one roof</div>
+                    <br><br> 
+                    <div class="blog-item blog-item-3s">Affordable. Accredited. Available in Major Cities</div>
+                    <br><br><br><br>
+                    <div class="blog-item blog-item-4s"><button class="buttons"><a href="./../newhp/index.html"  style="color: whitesmoke;"> See Latest health Packages</a></button></div>
+                    <img src="healthbackLOWRES.jpeg" alt="" id="img1">
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- HEALTH DIV ENDS -->
+
+      <!-- NEWS DIV STARTS -->
+      <div class="footer col-12 col-s-12" id="news">
+        <div class="blogdiv">
+            <div class="white-boundaryblog">
+                <div class="box2">
+                    <div class="blog-item blog-item-1s">NEWS</div>
+                    <div class="blog-item blog-item-2s">More than a Newspaper</div>
+                    <br><br> 
+                    <div class="blog-item blog-item-3s">Up-to-date news coverage from sources all over the world</div>
+                    <br><br><br><br>
+                    <div class="blog-item blog-item-4s"><button class="buttons"><a href="./../news 123/ng.html"  style="color: whitesmoke;"> Today's News</a></button></div>
+                    <img src="newsbackLOWRES.jpeg" alt="" id="img1">
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- NEWS DIV ENDS -->
+
+      <!--PATIENT SECTION STARTS-->
+
+    <div class="container-s3 col-12 col-s-12" id="patient">
+        <br><br><div class="pat-back">
+        <h1>Patient speaks</h1>
+
+        <h2>Care and services at ClarisCare were extended to the best of the levels. I felt at Home.</h2>
+
+        <p><span>Capability</span>, <span>Competency</span> and <span>Motivation</span>- these are the attributes which I can relate the <span>ClarisCare Team</span> with. They really cared to their <span>level best</span>. I'm really <span>satisfied</span> by the treatment levels through which I went there. I have no words to thank ClarisCare for this <span>heart touching experience</span>. <span style="color: whitesmoke;">- Mr. Rohan Sharma, Chandigarh</span></p>
+
+        <!-- <h3>Mr. Rohan Sharma, Chandigarh</h3> -->
+
+        <h4><a href="../Patient/our-Patients.html" style="color: whitesmoke;"><button class="view"> View all</button></a></h4> 
+        </div>
+    </div>
+
+    <!--PATIENT SECTION ENDS-->
+
+    
+      
+
+      <!--Footer Section Starts-->
+
+        <footer>
+        
+            <div class="footer-down">
+
+                <a style="color: whitesmoke;" href="#"><h3><span>C</span>laris<span>C</span>are</h3></a>
+
+                <ul class="socials">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">G+</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+
+                <p>copyright &copy;2022 ClarisCare. designed by <span>The Binary Beasts</span></p>
+            </div>
+
+        </footer>
+
+      <!--Footer Section Ends-->
+      
+
+      <script
+      src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.inner').toggleClass('active')
+            })
+        })
+    </script>
+      
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation</title>
+    <link rel="stylesheet" href="meditation1.css">
+</head>
+<body>
+    <!--Header Section Start-->
+    <header>
+
+        <p class="bar"><marquee scrollamount="12"  direction="right">Helpline Number: +91-11-23978046 &emsp; &emsp; &emsp; Toll Free Number: 1075 </marquee></p><hr>
+    
+        <div class="container">
+            
+            <a href="../home/HOMEfinal.html" class="logo"><span>C</span>laris<span>C</span>are<span>.</span></a>
+    
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar" class="fas fa-bars"></label>
+            <nav class="nav">
+                <ul>
+                    <li class="navli"><a href="../home/HOMEfinal.html">Home</a></li>
+                    <li class="navli"><a style="font-weight: bolder;" href="#">Covid-19</a></li>
+                    <li class="navli"><a href="../career/career.html">Careers</a></li>
+                        <li class="navli" ><a href="../specialist/Patient/Specialists.html">Specialists</a></li>
+                        <li class="navli"><a href="../appointment/app.html">Appointment</a></li>
+                        <li class="navli"><a href="../blog/blog.html">Blogs</a></li>
+                        <li class="navli"><a href="../health%20packages/HPSJ.html">Health Packages</a></li>
+                        <li class="navli"><a href="../news/news.html">News</a></li>
+                        <li class="navli"><a href="../Patient/our-Patients.html">Our Patients</a></li>
+                        
+    
+                    
+                </ul>
+            </nav>
+    
+        </div> 
+        
+        </header>
+        <!--Header Section Ends-->
+
+    <div class="app">
+
+        <div class="vid-container">
+            <video loop>
+                <source src="./blender files/0001-0079.mp4" type="video/mp4"/>
+            </video>
+        </div>
+
+        <div class="time-select">
+            <button data-time="120">2 minutes</button>
+            <button data-time="300">5 minutes</button>
+            <button data-time="600">10 minutes</button>
+        </div>
+        <div class="player-container">
+            <audio class="song">
+                <source src="./zipfilesdata/meditation-app-master/sounds/rain.mp3" />
+            </audio>
+            <img src="./zipfilesdata/meditation-app-master/svg/play.svg" alt="play" class="play">
+           
+            <!-- track outline below -->
+            <svg 
+            class="track-outline"
+                width="453" 
+                height="453" 
+                viewBox="0 0 453 453" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg">
+                    
+                <circle 
+                cx="226.5" 
+                cy="226.5" 
+                r="216.5" 
+                stroke="white" 
+                stroke-width="20" />
+            </svg>
+
+            <!-- moving outline below -->
+            <svg 
+            class="moving-outline"
+                width="453" 
+                height="453" 
+                viewBox="0 0 453 453" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg">
+
+                <circle 
+                cx="226.5" 
+                cy="226.5" 
+                r="216.5" 
+                stroke="#018EBA" 
+                stroke-width="20"/>
+            </svg>
+        <h3 class="time-display">00:00</h3>
+
+        </div>
+        <div class="sound-picker">
+            <button data-sound="./zipfilesdata/meditation-app-master/sounds/rain.mp3">
+                <img src="./blender files/cloudFINAL1.png" width="40%" height="40%" alt="cloundblend">
+            </button>
+            <button data-sound="./zipfilesdata/meditation-app-master/sounds/beach.mp3">
+                <img src="./blender files/sunFINAL3.png" width="40%" height="40%" alt="sunblend">
+            </button>
+        </div>
+    </div>
+
+
+    <script src="meditation1.js"></script>
+
+</body>
+</html>

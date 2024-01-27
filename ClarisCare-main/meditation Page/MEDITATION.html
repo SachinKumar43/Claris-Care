@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="medi-favi.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./MEDITATION1.css" />
+    <title>Meditation</title>
+  </head>
+  <body>
+
+ <!--Header Section Start-->
+ <header>
+
+  <p class="bar animate__animated animate__fadeIn"><marquee scrollamount="12"  direction="right">KEEP CALM AND MEDITATE</marquee></p><hr>
+
+  <div class="container animate__animated animate__zoomIn">
+      
+      <a href="../home/HOMEfinal.html" class="logo" style="color: white;"><span style="color: white;">C</span>laris<span style="color: white;">C</span>are<span style="color: white;">.</span></a>
+
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar" class="fas fa-bars"></label>
+      <nav class="nav">
+          <ul>
+              <li class="navli"><a href="../home/HOMEfinal.html">Home</a></li>
+              <li class="navli"><a href="../covid-19/covid.html">Covid-19</a></li>
+              <li class="navli"><a href="../career/career.html">Careers</a></li>
+                  <li class="navli" ><a href="../specialist/Patient/Specialists.html">Specialists</a></li>
+                  <li class="navli"><a href="../appointment/app.html">Appointment</a></li>
+                  <li class="navli"><a href="../blog/blog.html">Blogs</a></li>
+                  <li class="navli"><a href="../health%20packages/HPSJ.html">Health Packages</a></li>
+                  <li class="navli"><a href="../news/news.html">News</a></li>
+                  <li class="navli"><a href="../Patient/our-Patients.html">Our Patients</a></li>
+                  
+
+              
+          </ul>
+      </nav>
+
+  </div> 
+  
+  </header>
+  <!--Header Section Ends-->
+
+  
+
+    <div class="app">
+      
+      <div class="sound-picker col-  animate__animated animate__fadeInLeft">
+        <button data-sound="./zipfilesdata/meditation-app-master/sounds/rain.mp3" data-video="./blender files/0001-0079.mp4">
+          <img src="./blender files/cloudFINAL1.png" width="70%" height="70%" alt="cloundblend">
+          
+        </button>
+        <button data-sound="./zipfilesdata/meditation-app-master/sounds/beach.mp3" data-video="./blender files/0001-0079.mp4">
+          <img src="./blender files/sunFINAL3.png" width="70%" height="70%" alt="sunblend">
+          
+        </button>
+
+        <button data-sound="./zipfilesdata/meditation-app-master/sounds/motivational.mp3" data-video="./blender files/0001-0079.mp4">
+          <img src="./blender files/motiv-back1.png" width="70%" height="70%" alt="motivation">
+          
+        </button>
+
+        <p style="font-size: 30px; margin: 0 auto; padding: 10px; color: white; font-weight: bold;">Choose Theme</p>
+      </div>
+
+      <div class="vid-container">
+        <video loop>
+          <source src="./blender files/0001-0079.mp4" type="video/mp4"/>
+        </video>
+        </div>
+        
+        <div class="player-container col-  animate__animated animate__zoomIn">
+            <audio class="song">
+              <source src="./zipfilesdata/meditation-app-master/sounds/rain.mp3" />
+              </audio>
+              <img src="./zipfilesdata/meditation-app-master/svg/play.svg" alt="play" class="play">
+
+              <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0;">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+                </svg>
+              <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0;">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+                </svg>
+
+              <img src="./svg/replay.svg" class="replay" style="position: relative; top: -300px;"></img>
+            
+                <h3 class="time-display">00:00</h3>      
+      </div>
+
+      
+
+      <div class="time-select col-12  animate__animated animate__fadeInRight">
+        <button data-time="10"><p class="toBeReplaced">10 seconds</p></button>
+        <button data-time="300" class="medium-mins"><p class="toBeReplaced1">5 minutes</p></button>
+        <button data-time="600" class="long-mins"><p class="toBeReplaced2">10 minutes</p></button>
+        <p id="heading" style="font-size: 30px; margin: 0 auto; padding: 10px; color: white; font-weight: bold;">Breathe IN, Breathe OUT</p>
+      </div>
+    </div>
+    
+
+    <script src="MEDITATION2.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+:root{
+    --blue:#0188DF ;
+    --black:#354046 ;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--black);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden; 
+}
+
+body{
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.bar{
+    background-color: #0188DF;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    left: 0%;
+    height: 2rem;
+    color:#fff;
+    font-size: 1.3rem;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+}
+
+header .container{
+    position: fixed;
+    top: 0.5; left: 0;
+    width: 100%;
+    height: 8%;
+    background-color: aliceblue;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .container ul{
+    list-style-type: none;
+    display: flex;
+}
+
+header .logo{
+    font-size: 3rem;
+    color: var(--black);
+}
+
+header .logo span{
+    font-size: 3.9rem;
+    color: var(--blue);
+}
+
+header .nav a{
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    color: var(--black);
+}
+
+header .nav a:hover{
+    color: var(--blue);
+}
+
+header input{
+    display: none;
+}
+
+header label{
+    font-size: 2.3rem;
+    color: #0188DF;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.home .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:25px;
+    min-height: 100vh;
+    background-image: url(http://cleancarelinen.com/wp-content/uploads/2018/03/history-of-the-hospital-bed.jpg);
+    background-size: cover;
+}
+
+.home .container form{
+    margin-top: 3%;
+    padding:20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width:700px;
+
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  }
+
+.home  .container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+  
+.home .container form .row .col{
+    flex:1 1 250px;
+}
+  
+.home .container form .row .col .title{
+    font-size: 20px;
+    color: whitesmoke;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+  
+.home .container form .row .col .inputBox{
+    margin:15px 0;
+}
+  
+.home .container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+}
+  
+.home .container form .row .col .inputBox input{
+    width: 100%;
+    border:1px solid #ccc;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+  
+.home .container form .row .col .inputBox input:focus{
+    border:1px solid #000;
+}
+  
+.home .container form .row .col .flex{
+    display: flex;
+    gap:15px;
+}
+  
+.home .container form .row .col .flex .inputBox{
+    margin-top: 5px;
+}
+  
+.home .container form .row .col .inputBox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+  
+.home .container form .submit-btn{
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: whitesmoke;
+    color: var(--black);
+    margin-top: 5px;
+    cursor: pointer;
+}
+  
+.home .container form .submit-btn:hover{
+    background: #2ecc71;
+}
+
+.home span{
+    color: whitesmoke;
+}
+
+/*
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+
+
+[class*="col-"] {
+float: left;
+padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES STARTS*/
+
+@media (max-width:1200px) {
+    html{
+        font-size: 47%;
+    }
+}
+
+@media (max-width: 768px){
+
+
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header .nav{
+        position: absolute;
+        top: 100%; left: 0;
+        width: 100%;
+        background-color: whitesmoke;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    header .nav li{
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    header input:checked ~ .nav{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header input:checked ~ label::before{
+        content: '\f00d';
+    }      
+    
+    
+
+    header .container ul{
+        display: block;
+    }
+    
+
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+
+}
+
+/*MEDIA QUERIES ENDS*/
